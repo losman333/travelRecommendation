@@ -4,7 +4,7 @@ nav {
 
 }
 nav ul {
-    display: inline;
+    display:inline-block;
 }
 
 nav li {
