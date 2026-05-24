@@ -9,16 +9,20 @@
 <nav class="nav"">
     <img src="logo.png" alt="travel-logo">
     <ul>
-        <li><a href="home"></a>Home</li>
-        <li><a href="about"></a>About</li>
-        <li><a href="contact"></a>Contact</li>
-        <form action="/search-results-page" methods="get">
-            <label for="site-search">Search Site</label>
-            <input type="search" id="site-search" name="q" placeholder="Search...">
-            <button>Search</button>
-            <button>Reset</button>
-        </form>
+        <div class="menu">
+            <li><a href="home"></a>Home</li>
+            <li><a href="about"></a>About</li>
+            <li><a href="contact"></a>Contact</li>
+            
+        </div>
+        
     </ul>
+    <form class="search" action="/search-results-page" methods="get">
+        <label for="site-search">Search Site</label>
+        <input type="search" id="site-search" name="q" placeholder="Search...">
+        <button>Search</button>
+        <button>Reset</button>
+    </form>
 </nav>
 <body>
     

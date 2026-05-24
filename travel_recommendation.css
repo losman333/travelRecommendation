@@ -1,0 +1,30 @@
+body {
+    maring: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    height: auto;
+    background-color: darkgreen;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    
+    font-size: 12px;
+    color: white;
+    padding-right: 15px;
+    float: left;
+}
+
+.search {
+    float: right;
+
+  
+}
+
