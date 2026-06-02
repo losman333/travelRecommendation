@@ -34,4 +34,4 @@ function searchDestination() {
 			resultDiv.innerHTML = 'An error occurred while fetching data.';
 		  });
 	  }
-	    btnSearch.addEventListener('click', searchCondition);
+	    btnSearch.addEventListener('click', searchDestination);
