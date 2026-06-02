@@ -11,7 +11,7 @@ function searchDestination() {
 			if (destination && keyword) {
 			  const countries = country.countries.join(', ');
 			  const temples = condition.temples.join(', ');
-			  const beaches = condition.beaches;
+			  const beaches = condition.beaches.join(', ');
 
 			  resultDiv.innerHTML += `<h2>${countries.name}</h2>`;
 			  resultDiv.innerHTML += `<img src="${countries.imagesrc}" alt="hjh">`;
