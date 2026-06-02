@@ -1,5 +1,5 @@
 function searchDestination() {
-		const input = document.getElementById('conditionInput').value.toLowerCase();
+		const input = document.getElementById('destinationInput').value.toLowerCase();
 		const resultDiv = document.getElementById('result');
 		resultDiv.innerHTML = '';
 
