@@ -6,7 +6,7 @@ function searchDestination() {
 		fetch('travel_recommendation_api.json')
 		  .then(response => response.json())
 		  .then(data => {
-			const condition = data.conditions.find(item => item.name.toLowerCase() === input);
+			const condition = data.countries.find(item => item.name.toLowerCase() === input);
 
 			if (destination && keyword) {
 			  const countries = country.countries.join(', ');
