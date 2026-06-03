@@ -6,12 +6,12 @@ function searchDestination() {
 		fetch('travel_recommendation_api.json')
 		  .then(response => response.json())
 		  .then(data => {
-			const country = data.countries.find(item => item.name.toLowerCase() === input);
+			const destination = data.countries.find(item => item.name.toLowerCase() === input);
 
 			if (destination && keyword) {
-			  const countries = country.countries.join(', ');
-			  const temples = country.temples.join(', ');
-			  const beaches = country.beaches.join(', ');
+			  const countries = destination.countries.join(', ');
+			  const temples = destination.temples.join(', ');
+			  const beaches = destination.beaches.join(', ');
 
 			  resultDiv.innerHTML += `<h2>${countries.name}</h2>`;
 			  resultDiv.innerHTML += `<img src="${countries.imagesrc}" alt="hjh">`;
