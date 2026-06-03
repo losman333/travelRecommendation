@@ -8,7 +8,7 @@ function searchDestination() {
 		  .then(data => {
 			const destination = data.countries.find(item => item.name.toLowerCase() === input);
 
-			if (destination && keyword) {
+			if (destination) {
 			  const countries = destination.countries.join(', ');
 			  const temples = destination.temples.join(', ');
 			  const beaches = destination.beaches.join(', ');
