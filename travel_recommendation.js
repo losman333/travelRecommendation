@@ -1,7 +1,19 @@
-const btnSearch = document.getElementById("btnSearch");
+btnSearch
 
-function searchDestination () {
-    const destinationInput = document.getElementById("destinationInput");
-    
+searchInput
 
-}
+fetch travel_recommendation_api.json
+
+console.log(result)
+
+beach beaches Beach
+
+temple temples Temple
+
+country countries Country
+
+Image
+
+description
+
+result
