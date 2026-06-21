@@ -2,6 +2,16 @@ btnSearch
 
 /**
  * recommendattion results
+ * 
+ * fetch data using fetch api
+ * 
+ * display name of place
+ * 
+ * display image
+ * 
+ * use console.log to see if result is displayed
+ * 
+ * 
  */
 
 
@@ -11,6 +21,8 @@ fetch travel_recommendation_api.json
 
 country place cities name imageUrl description
 .then 
+
+console.log(results);
 
 console.log(country.name)
 
@@ -27,6 +39,8 @@ console.log(result)
 
 /**
  * keyword searches
+ * 
+ * write code that accepts variation of keywords
  */
 
 let keyword = docoument.getElementById().toLowerCase();
