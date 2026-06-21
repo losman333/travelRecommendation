@@ -3,12 +3,18 @@ btnSearch
 /**
  * recommendattion results
  */
-searchInput
 
+
+let result = document.getElementById('result');
 
 fetch travel_recommendation_api.json
 
-.then
+country place cities name imageUrl description
+.then 
+
+console.log(country.name)
+
+console.elog
 
 .then
 
@@ -23,27 +29,61 @@ console.log(result)
  * keyword searches
  */
 
+let keyword = docoument.getElementById().toLowerCase();
 
+let searchInput = document.getElementById('searchInput');
+
+let result = document.getElementById('result');
 
 beach beaches Beach
 
-temple temples Temple
+if( keyword = beach) {
 
-country countries Country
+}
+
+temple temples Temple if() {
+
+}
+
+country countries Country if () {
+
+}
 
 /**
  * task recommendations
  */
+
+fetch
+
+.then
+
+.then
+
+beach, template, country
+
+/**
+ * disply two recommendation an image and a description
+ */
+
 
 
 Image
 
 description
 
-result
+
 
 /**
  * clear button
  */
 
-clearBtn
+let clear = clear.addEventListener('click', => {
+
+})
+document.getElementById()
+
+
+/**
+ * display time in country recommended
+ * 
+ */
