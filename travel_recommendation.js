@@ -17,7 +17,11 @@ btnSearch
 
 let result = document.getElementById('result');
 
-fetch travel_recommendation_api.json
+fetch ('travel_recommendation_api.json')
+.then(res => json.response)
+.then(data => {
+    const
+})
 
 country place cities name imageUrl description
 .then 
