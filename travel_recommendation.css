@@ -37,7 +37,7 @@ nav a {
 }
 
 .card {
-    display: flex;
+    display: grid;
     float: right;
 }
 

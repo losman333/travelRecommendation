@@ -7,11 +7,11 @@ fetch ('travel_recommendation_api.json')
         country.cities.forEach(city => {
         result.innerHTML += `
         <div class = "container"> 
-            <div class="card">
-                <h3>${city.imageURL}</h3>
-                <h2>${city.name}</h2>
-                <img src="${city.description}" alt="${city.name}" width="300">
-            </div>
+        <div class="card">
+            <img src="${city.imageUrl}" alt="${city.imageUrl}" width="300">
+            <h2>${city.name}</h2>
+            <h3>${city.description}</h3>
+        </div>
         </div>    
         `
         ;
