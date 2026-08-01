@@ -13,9 +13,14 @@ function searchPlaces() {
     if(country) {
       
             country.cities.forEach(cities => {
-                resultDiv.innerHTML += `${cities.imageUrl}`;
-                resultDiv.innerHTML += `${cities.name}`;
-                resultDiv.innerHTML += `${cities.name}`;
+                resultDiv.innerHTML += `
+                <img src="${cities.imageUrl}" alt="${cities.name}" height=400px>
+                <h2>${cities.name}</h2>
+                <p>${cities.description}</p>
+            
+                `
+                ;
+              
             });
    
     };
