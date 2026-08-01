@@ -13,6 +13,9 @@ function searchPlaces() {
                 country.cities.forEach(cities => {
                     resultDiv.innerHTML += `${cities.name}`;
                 });
+                country.temples.forEach(cities => {
+                    resultDiv.innerHTML += `${temples.name}`;
+                });
             });
         });
 

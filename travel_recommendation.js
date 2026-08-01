@@ -9,8 +9,9 @@ function searchPlaces() {
     .then(response => response.json())
     .then(data => { 
         const country = data.countries.find(c => c.name.toLowerCase() === input);
+        const temple = data.temples.find(c => c.name.toLowerCase() === input);
 
-    if(country) {
+    if(country || temple) {
       
             country.cities.forEach(cities => {
                 resultDiv.innerHTML += `
@@ -23,7 +24,7 @@ function searchPlaces() {
               
             });
    
-    };
+    }; 
 
     });
     
