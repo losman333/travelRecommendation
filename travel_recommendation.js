@@ -4,25 +4,33 @@ let searchButton = document.getElementById("searchButton");
 function searchPlaces() {
 
     let resultDiv = document.getElementById('result');
-    const input = document.getElementById("searchInput").value.toLowerCase();
+    const input = document.getElementById("searchInput")
+    .value
+    .trim()
+    .toLowerCase();
+
+    resultDiv.innerHTML = "";
+
     fetch ('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => { 
-        const country = data.countries.find(c => c.name.toLowerCase() === input);
-        const temple = data.temples.find(c => c.name.toLowerCase() === input);
+        const beaches = data.beaches.find(item => 
+            item.name.toLowerCase().includes(input)
+        );
+        // const temple = data.temples.find(c => c.name.toLowerCase() === input);
 
-    if(country || temple) {
+    if(beaches) {
       
-            country.cities.forEach(cities => {
+            
                 resultDiv.innerHTML += `
-                <img src="${cities.imageUrl}" alt="${cities.name}" height=400px>
-                <h2>${cities.name}</h2>
-                <p>${cities.description}</p>
+                <img src="${beaches.imageUrl}" alt="${beaches.name}" height=400px>
+                <h2>${beaches.name}</h2>
+                <p>${beaches.description}</p>
             
                 `
                 ;
               
-            });
+           
    
     }; 
 
