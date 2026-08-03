@@ -14,25 +14,50 @@ function searchPlaces() {
     fetch ('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => { 
-        const beaches = data.beaches.find(item => 
-            item.name.toLowerCase().includes(input)
+        const beach = data.beaches.find(item => 
+            item.name
+            .toLowerCase()
+            .includes(input)
         );
+        const temple = data.beaches.find(item => 
+            item.name
+            .toLowerCase()
+            .includes(input)
+        );
+        
         // const temple = data.temples.find(c => c.name.toLowerCase() === input);
+            if(["beach", "beaches"].includes(input)) {
+                data.beaches.forEach(beach => {
+                    resultDiv.innerHTML += `
+                        <img src="${beach.imageUrl}" alt="${beach.name}" height="400">
+                        <h2>${beach.name}</h2>
+                        <p>${beach.description}</p>
+                    `;                
+                    }); 
+            } else if (beach) {
+                resultDiv.innerHTML = `
+                <img src="${beach.imageUrl}" alt="${beach.name}" height="400">
+                <h2>${beach.name}</h2>
+                <p>${beach.description}</p>
+    `;
+            }
+            if(["temple", "temples"].includes(input)) {
+                data.temples.forEach(temple => {
+                    resultDiv.innerHTML += `
+                        <img src="${temple.imageUrl}" alt="${temple.name}" height="400">
+                        <h2>${temple.name}</h2>
+                        <p>${temple.description}</p>
+                    `;                
+                    }); 
+            } else if (temple) {
+                resultDiv.innerHTML = `
+                <img src="${temple.imageUrl}" alt="${temple.name}" height="400">
+                <h2>${temple.name}</h2>
+                <p>${temple.description}</p>
+    `;
+            }
 
-    if(beaches) {
-      
-            
-                resultDiv.innerHTML += `
-                <img src="${beaches.imageUrl}" alt="${beaches.name}" height=400px>
-                <h2>${beaches.name}</h2>
-                <p>${beaches.description}</p>
-            
-                `
-                ;
-              
-           
-   
-    }; 
+
 
     });
     
