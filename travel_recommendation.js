@@ -3,7 +3,7 @@ document.getElementById("searchInput");
 document.getElementById("searchButton");
 document.getElementById("search-results");
 "result"
-resultDiv.innerHTML = 
+resultDiv.innerHTML = '';
 
 
 fetch("trave_recommendation_api.json")
@@ -14,11 +14,9 @@ fetch("trave_recommendation_api.json")
 
     if(destinations) {
         // check to see if search matches the entered input 
-         const destination = data( destinations => {
-                data.destinations.find(include(input === "destinationInput"))
-            })
+         const destination = data.countries.find(item => item.name.toLowerCase.include() === input)
 
-            resultDiv =+ `
+            resultDiv.innerHTML =+ `
             
             ${destination.name}
             ${destination.description}
