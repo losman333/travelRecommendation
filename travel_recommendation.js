@@ -1,43 +1,37 @@
-const searchButton = document.getElementById("searchButton");
-const searchInput = document.getElementById("searchInput");
-const clearButton = document.getElementById("clearButton");
-search-results
-result
 
-resultDiv.innerHTML
+document.getElementById("searchInput");
+document.getElementById("searchButton");
+document.getElementById("search-results");
+"result"
+resultDiv.innerHTML = 
 
-fetch(response => response.JSON)
-fetch("travel_recommendation_api.json") {
 
-}
-"beach", "beaches", "Beach", "BEACH"
+fetch("trave_recommendation_api.json")
+.then(response => response.json());
+.then(data => {
+    destinationInput
+    result
 
-"temple", "temples", "Temples", "TEMPLES"
+    if(destinations) {
+        // check to see if search matches the entered input 
+         const destination = data( destinations => {
+                data.destinations.find(include(input === "destinationInput"))
+            })
 
-"countries", "COUNTRIES"
-.getElementById("searchInput")
-.value
-.trim()
-toLowerCase
-.include(input)
-
-temple, temples
-
-cities
-
-function searchDestinations() {
-   
-   
-    if() {
-
+            resultDiv =+ `
+            
+            ${destination.name}
+            ${destination.description}
+            
+            `
+         
     } else {
-    
-    }
-    
-    catch(error => {
-    
-    })
-    
-}
 
-searchButton.addEventListener("click", searchDesintations);
+    }
+
+
+}) catch(error => {
+    "no places found"
+})
+
+searchButton.addEventListener();
