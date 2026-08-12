@@ -5,7 +5,10 @@ function searchDestinations() {
     fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        const result = data.filter("beaches");
+        for(result in results) {
+            '${result.name}'
+        }
     })
 }
 searchButton.addEventListener('click', searchDestinations);
