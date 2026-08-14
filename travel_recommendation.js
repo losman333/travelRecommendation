@@ -2,10 +2,17 @@
 const searchButton = document.getElementById('searchButton');
 
 function searchDestinations() {
-    const input = document.getElementById('searchInput').value.toLowerCase();
+    let input = document.getElementById('searchInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
 
+    if (input === "country") {
+        input = "countries";
+    } else if (input === "beach") {
+        input = "beaches";
+    } else if (input === "temple") {
+        input = "temples";
+    }
     fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
@@ -14,15 +21,15 @@ function searchDestinations() {
                 if(input === "countries") {
                     p.cities.forEach(city => {
                         resultDiv.innerHTML += `
-                        <h3>${city.name}</h3>
                         <img src="${city.imageUrl}" alt="${city.name} "width="400" >
+                        <h3>${city.name}</h3>
                         <p>${city.description}</p>
                         `;
                     })
                 } else {
                     resultDiv.innerHTML += `
-                        <h3>${p.name}</h3>
                         <img src="${p.imageUrl}" alt="${p.description}" width="400px">
+                        <h3>${p.name}</h3>
                         <p>${p.description}</P>
                         `;
                 }
