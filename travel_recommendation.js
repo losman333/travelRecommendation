@@ -49,3 +49,8 @@ function searchDestinations() {
     });
 }
 searchButton.addEventListener('click', searchDestinations);
+searchInput.addEventListener('keydown', event => {
+    if(event.key ===  `Enter`) {
+        searchDestinations();
+    }
+})
