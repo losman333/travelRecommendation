@@ -1,6 +1,6 @@
 
 const searchButton = document.getElementById('searchButton');
-
+const clearButton = document.getElementById('clearButton');
 function searchDestinations() {
     let input = document.getElementById('searchInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
@@ -54,3 +54,8 @@ searchInput.addEventListener('keydown', event => {
         searchDestinations();
     }
 })
+function clearSearch() {
+    document.getElementById("searchInput").value = "";
+}
+
+clearButton.addEventListener('click', clearSearch);
