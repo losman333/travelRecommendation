@@ -1,8 +1,7 @@
-
 const searchButton = document.getElementById('searchButton');
 function searchDestinations() {
     let input = document.getElementById('searchInput').value.toLowerCase();
-    const resultDiv = document.getElementById('result');
+    const resultDiv = document.getElementById('results');
     resultDiv.innerHTML = '';
 
     if (input === "country") {
@@ -20,16 +19,27 @@ function searchDestinations() {
                 if(input === "countries") {
                     p.cities.forEach(city => {
                         resultDiv.innerHTML += `
-                        <img src="${city.imageUrl}" alt="${city.name} "width="400" >
-                        <h3>${city.name}</h3>
-                        <p>${city.description}</p>
+                        <div class="card">
+                            <img src="${city.imageUrl}" alt="${city.name} "width="400" >
+                            <h3>${city.name}</h3>
+                            <p>${city.description}</p>
+                        </div>
+                         
+                         
+                    
+            
+                    
+                      
                         `;
                     })
                 } else {
                     resultDiv.innerHTML += `
-                        <img src="${p.imageUrl}" alt="${p.description}" width="400px">
+                    <div class="card">
+                         <img src="${p.imageUrl}" alt="${p.description}" width="400px">
                         <h3>${p.name}</h3>
                         <p>${p.description}</P>
+                    </div> 
+                       
                         `;
                 }
             })
@@ -46,7 +56,7 @@ function searchDestinations() {
     //    }
 
     });
-}
+} 
 searchButton.addEventListener('click', searchDestinations);
 searchInput.addEventListener('keydown', event => {
     if(event.key ===  `Enter`) {
