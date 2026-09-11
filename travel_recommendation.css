@@ -8,6 +8,7 @@ nav {
     padding: 30px 15px 30px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 nav ul {
@@ -30,8 +31,39 @@ nav a {
 
 }
 
-.search {
-    display: flex;   
+.searchbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;  
+    padding: 10px;
+    gap: 20px;
+    overflow: visible;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    background: #aeaeae;
+    padding: 5px 10px 5px 10px;
+}
+
+input {
+    all: unset;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+   
+    field-sizing: content;
+    max-width: 200px;
+    min-width: 200px;
+    font-size: 12px;
+ 
+
 }
 
 
