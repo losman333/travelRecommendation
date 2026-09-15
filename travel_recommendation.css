@@ -83,6 +83,13 @@ button {
     align-self: auto;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    text-wrap: wrap;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -91,6 +98,18 @@ button {
     height: auto;
     width: 400px;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    gap: 50px;
+
 }
 
 .contact input {
@@ -99,7 +118,7 @@ button {
 }
 
 .contact textarea {
-    height: 200px;
+    height: 100px;
 }
 
 
