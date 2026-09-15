@@ -10,41 +10,31 @@
 <body>
     <nav class="nav"">
     <img src="logo.png" alt="travel-logo">
-<ul>
-    <div class="menu">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact_us.html">Contact</a></li>        
+        <ul>
+            <div class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>        
+            </div>   
+        </ul>
+
+        <div class="searchbar">
+            <div class="search-input">
+                <input type="text" id="searchInput" placeholder="Enter a destination or keyword"> 
+            </div>
+
+            <div class="searchbuttons">
+                <button id='searchButton'>Search</button>
+                <button id='clearButton'>Clear</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <div id="results"></div>
+        </div>
     </div>
-    
-</ul>
-
-  <div class="searchbar">
-    <div class="search-input">
-        <input type="text" id="searchInput" placeholder="Enter a destination or keyword"> 
-
-    </div>
-    <div class="searchbuttons">
-
-        <button id='searchButton'>Search</button>
-        <button id='clearButton'>Clear</button>
-    </div>
-  </div>
-
-
-
-
-</nav>
-
-<div class="hero">
-    <div class="container">
-        <div id="results"></div>
-    </div>
-</div>
-
-    
-// result 
-   
     
 </body>
 <script src="travel_recommendation.js"></script>
