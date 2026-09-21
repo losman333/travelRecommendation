@@ -70,17 +70,22 @@ button {
 .hero {
     height: 70vh;
     width: 100%;
-    display: flex;
-    justify-content: center ;
+    display: flex;  
     background-image: url('https://digital.ihg.com/is/image/ihg/intercontinental-bora-bora-5357284500-4x3');
     background-position: center;
     background-size: cover;
 }
 
 .container {
-    width: 960px;
-    margin: auto;
-    align-self: auto;
+    display: flex;
+    max-width: 90%;
+    gap: 40px;
+    margin: 200px 40px 0 40px;
+
+}
+
+.social-icons {
+    
 }
 
 .description {
