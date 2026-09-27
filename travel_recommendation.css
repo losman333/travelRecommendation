@@ -186,3 +186,18 @@ button {
     justify-content: space-between;
 
 }
+
+.social-icons  {
+  
+  list-style: none;
+ 
+}
+
+.social-icons li {
+    padding-bottom: 20px;
+}
+
+.svg-img-white {
+    /* This fully inverts the image (turning black to white) and maximizes brightness */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
