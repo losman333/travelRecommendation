@@ -68,6 +68,7 @@ button {
 
 
 .hero {
+    display: flex;
     height: 70vh;
     width: 100%;
     display: flex;  
@@ -78,12 +79,18 @@ button {
 
 .container {
     display: flex;
-    max-width: 90%;
+    justify-content: center;
+    max-width: 100%;
     gap: 40px;
     margin: 200px 40px 40px 40px;
 
 }
 
+.sidebar {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;    
+}
 .social-icons {
     
 }
@@ -91,7 +98,7 @@ button {
 .description {
     display: flex;
     flex-direction: column;
-    width: 600px;
+   
     text-wrap: wrap;
 }
 
