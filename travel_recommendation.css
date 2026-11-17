@@ -70,7 +70,7 @@ button {
 
 .hero {
     display: flex;
-    height: 70vh;
+    height: 100%;
     width: 100%;
     display: flex;  
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://digital.ihg.com/is/image/ihg/intercontinental-bora-bora-5357284500-4x3');
@@ -85,6 +85,20 @@ button {
     gap: 40px;
     margin: 200px 40px 40px 40px;
 
+}
+
+.results-container {
+    width: 100%;
+    justify-content: center;
+    place-items: center;
+
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .sidebar {
@@ -136,12 +150,7 @@ button {
 
 
 
-#results {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
+
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
